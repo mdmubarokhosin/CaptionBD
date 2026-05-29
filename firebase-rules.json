@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "captions": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["categoryId", "status", "isFeatured", "createdAt"]
+    },
+    "categories": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["slug", "order"]
+    },
+    "tags": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["slug", "captionCount"]
+    },
+    "siteConfig": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}
